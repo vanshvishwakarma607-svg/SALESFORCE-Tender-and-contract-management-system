@@ -54,10 +54,16 @@ There is a need for a centralized, automated, and scalable solution that can man
 - Streamlining approval workflows between procurement, finance, and project managers.
   
  # APP EXPLORER
-- DocuSign
-- Conga Composer
-- Salesforce Maps
-- FinancialForce
-- Formstack
+ 
+- DocuSign (Contract Signing)
 
-#
+- Conga Composer (Document Generation)
+
+- Salesforce Maps (Project Sites)
+
+- FinancialForce (Payment Tracking)
+
+- Formstack (Bid Submission)
+
+- Tableau CRM (Analytics)
+
