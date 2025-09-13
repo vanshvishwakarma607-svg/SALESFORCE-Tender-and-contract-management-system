@@ -25,6 +25,7 @@ There is a need for a centralized, automated, and scalable solution that can man
 - System Admin (Salesforce Admin/Dev) → Manages roles, security, and workflows in Salesforce.
 
 # Business Settlement 
+
    Tender Creation
          ↓
    Bid Submission
@@ -36,6 +37,7 @@ There is a need for a centralized, automated, and scalable solution that can man
   Payment Tracking
          ↓
   Contract Closure
+  
 # Indusrty- specific Use Case Analysis
 
   #Government Infrastructure Projects
