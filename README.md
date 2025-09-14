@@ -1,6 +1,13 @@
 # SALESFORCE-Tender-and-contract-management-system
 The traditional process of tendering and contract management in the civil engineering and construction industry is often manual, paper-based, and fragmented, leading to delays, miscommunication, and lack of transparency ,tracking multiple tenders and bid submissions real-time updates on contract approval status, Manual evaluation of bids.
 
+ INDUSTRY : Construction / Infrastructure / Civil Engineering Industry.
+
+ PROJECT TYPE : Salesforce Custom App Development Project (Admin + Developer).
+
+ TARGET USER : “The target users of this system include procurement managers, contractors, project managers, finance teams, and executives who require streamlined                   tendering, bidding, and contract lifecycle management.
+        
+
 📌 Problem Statement
 
 The traditional process of tendering and contract management in the civil engineering and construction industry is often manual, paper-based, and fragmented. This leads to:
