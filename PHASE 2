@@ -1,0 +1,202 @@
+                                                                                          # PHASE 2  Org Setup & Configuration)
+
+
+
+      
+1. Salesforce Editions
+
+ - Select Developer Edition (free, best for practice)
+
+ - Justify why (for learning + testing Tender & Contract Management system).
+
+2. Company Profile Setup:
+
+  - Company Name: Tender & Contract Management System Pvt. Ltd.
+
+  - Primary Contact: System Administrator (Admin User)
+
+  - Default Currency: INR (₹) – Indian Rupee
+
+  - Default Locale: English (India)
+
+  - Default Time Zone: (GMT+5:30) Asia/Kolkata
+
+  - Default Language: English
+
+  - Corporate Address: (You can add a dummy address like New Delhi, India for practice)
+
+
+3. Business Hours & Holidays
+
+  -Define Business Hours (Mon–Fri, 9:00 AM – 6:00 PM IST)
+
+  -Add Holidays (e.g., Independence Day, Diwali, New Year)
+
+
+4: Fiscal Year Settings
+
+ - Choose Standard Fiscal Year (Jan–Dec OR Apr–Mar, based on industry)
+
+
+5. User Setup & Licenses
+
+  -Create sample users:
+
+  -Procurement Manager
+ 
+ -Contractor
+
+ -Finance Officer
+
+-System Admin
+
+
+  # System Administrator (You)
+
+    -License: Salesforce Platform or Salesforce
+
+    -Profile: System Administrator
+
+    -Role: Admin / Project Owner
+
+     -Access: Full access to all objects, data, and setup.
+
+ # Project Manager
+
+    -License: Salesforce Platform
+
+    -Profile: Project Manager (custom profile based on Standard User)
+
+    -Role: Manages all tenders & contracts, monitors workflows.
+
+    -Access: Create/edit/view tenders, contracts, payments, approvals.
+
+ #Procurement Officer
+
+   -License: Salesforce Platform
+
+   -Profile: Procurement Officer
+
+   -Role: Manages vendor bidding and evaluations.
+
+  -Access: Can create bids, evaluate tenders, update vendor details.
+
+# Contractor / Vendor (External User)
+
+   -License: Salesforce Customer Community Plus (or Partner Community if available)
+
+   -Profile: Contractor User
+
+   -Role: External role for vendor participation.
+
+   -Access: Limited – submit bids, view awarded contracts.
+
+ # Finance Officer
+
+    -License: Salesforce Platform
+
+    -Profile: Finance Officer
+
+    -Role: Handles payments, billing, and contract closure.
+
+     -Access: Payment records, approvals, dashboards.
+
+# Auditor (Read-Only)
+
+    -License: Salesforce Platform (Read Only)
+
+     -Profile: Read Only
+
+      -Role: For compliance & auditing.
+
+      -Access: View-only access to all tender & contract records. 
+
+
+6. Profiles
+
+-Standard Profiles: Admin, Standard User
+
+-Custom Profile: Procurement User (restricted to Tender objects)
+
+
+7. Roles
+
+-Role Hierarchy:
+
+-CEO → Procurement Head → Procurement Officer → Contractor
+
+
+ CEO / Managing Director
+           |
+    -----------------
+    |               |
+Project Manager   Auditor (Read-Only)
+    |
+-------------------------
+|                       |
+Procurement Officer   Finance Officer
+    |
+Contractor / Vendor (External)
+
+
+8. Permission Sets
+
+-Create extra permissions (e.g., Finance Approval, Contract Editing)
+
+
+9. OWD (Org-Wide Defaults)
+
+-Tenders – Private
+
+-Contracts – Private
+
+-Bids – Private
+
+-Payments – Private
+
+-Vendors – Controlled by Parent
+
+-Accounts – Private
+
+-Contacts – Controlled by Parent
+
+-Opportunities – Private (if used)
+
+-Cases – Private (if used)
+
+-Reports & Dashboards – Public Read Only
+
+
+10. Sharing Rules
+
+-Allow Procurement Head to see all Contracts
+
+-Contractors can only see their own tenders
+
+
+11. Login Access Policies
+
+-Define IP Ranges (office-based)
+
+-Set Login Hours (9:00 AM – 7:00 PM)
+
+
+12. Dev Org Setup
+
+-Create Developer Org
+
+-Install Salesforce Extensions in VS Code
+
+-Connect Org with Salesforce CLI
+
+
+13. Sandbox Usage
+
+-(Optional for testing) Create Developer Sandbox to test before production
+
+
+14. Deployment Basics
+
+-Learn Change Set deployment (for moving metadata between orgs)
+
+-Alternative: Salesforce CLI Deployment
