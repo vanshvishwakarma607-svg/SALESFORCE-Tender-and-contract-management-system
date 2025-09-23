@@ -1,1 +1,85 @@
+📌 Phase 3: Data Modeling & Relationships
 
+
+1. Standard & Custom Objects
+
+Standard Objects
+
+Account → Represents Contractor/Company
+
+Contact → Represents People (Contract Manager, Procurement Officer)
+
+User → Internal Salesforce Users (roles like Manager, Bidder)
+
+Custom Objects (You create in Setup → Object Manager → New Object)
+
+Tender__c → Stores tender details
+
+Bid__c → Stores bids submitted by contractors
+
+Contract__c → Stores awarded contract details
+
+Project__c → Tracks the project execution linked to contracts
+
+Payment__c → Stores payments made against contracts
+
+🔹 2. Fields
+
+Examples:
+
+Tender__c → Tender ID (Auto Number), Tender Name (Text), Status (Picklist: Open/Closed/Awarded)
+
+Bid__c → Bid ID (Auto Number), Amount (Currency), Status (Picklist: Pending/Approved/Rejected)
+
+Contract__c → Contract Value (Currency), Start Date (Date), End Date (Date)
+
+Project__c → Project Name (Text), Location (Text), Progress (%)
+
+Payment__c → Payment Date (Date), Payment Amount (Currency), Mode (Picklist: Bank Transfer, Cheque, Online)
+
+🔹 3. Record Types
+
+Tender__c → Govt Tender, Private Tender
+
+Contract__c → Short-Term, Long-Term
+
+🔹 4. Page Layouts
+
+Tender__c → Fields arranged for Procurement Officers (Name, Status, Start/End Dates, Related Bids)
+
+Bid__c → Layout for Bidders (Amount, Submitted Date, Tender Reference)
+
+Contract__c → Layout for Managers (Contract Value, Status, Related Payments/Projects)
+
+🔹 5. Compact Layouts
+
+Tender__c → Show Tender Name, Status, Start Date, End Date
+
+Bid__c → Show Bid ID, Amount, Status
+
+Contract__c → Show Contract ID, Value, Status
+
+🔹 6. Schema Builder
+
+Use Setup → Schema Builder
+
+Add Tender__c, Bid__c, Contract__c, Project__c, Payment__c
+
+Draw relationships between them → this acts as your ERD (Entity Relationship Diagram).
+
+🔹 7. Lookup vs Master-Detail vs Hierarchical Relationships
+
+Tender__c → Bid__c = Master-Detail (One Tender, many Bids)
+
+Tender__c → Contract__c = Lookup (One Tender leads to one Contract)
+
+Contract__c → Payment__c = Master-Detail (One Contract has many Payments)
+
+Contract__c → Project__c = Lookup (Link Project execution to Contract)
+
+User Hierarchy (Role Reporting) = Hierarchical
+
+🔹 8. Junction Objects (if needed)
+
+If one Bid could be linked to multiple Tenders (rare, but possible), you would create a TenderBid__c junction object.
+For now, your system doesn’t require it, unless you want to extend functionality.
