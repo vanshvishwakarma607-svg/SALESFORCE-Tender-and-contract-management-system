@@ -1,1 +1,82 @@
+     PHASE 4 : Process Automation
 
+
+1️⃣ Validation Rules
+
+Ensure data integrity by restricting invalid entries.
+
+Object	Rule Name	Logic	Error Message
+
+Tender__c	EndDate_Check	End Date < Start Date	“End Date cannot be before Start Date”
+
+Bid__c	BidAmount_Positive	Bid Amount ≤ 0	“Bid Amount must be greater than 0”
+
+Contract__c	ContractValue_Positive	Contract Value ≤ 0	“Contract Value must be greater than 0”
+
+Payment__c	PaymentDate_Check	Payment Date > Contract End Date	“Payment Date cannot exceed Contract End Date”
+
+
+2️⃣ Workflow Rules
+
+Automat
+e repetitive actions based on specific criteria.
+
+Object	Trigger	Action
+
+Tender__c	Status = Approved	Email Alert to Procurement Officer
+
+Bid__c	Status = Submitted	Task → Notify Project Manager
+
+Contract__c	Status = Signed	Field Update → Mark Tender as “Closed”
+
+3️⃣ Process Builder
+
+Automate multi-step business logic.
+
+Object	Criteria	Action
+
+Bid__c	Status = Submitted	Update Tender Status → “Bids Received”, Send Email Notification
+
+Contract__c	Contract Created	Auto-create Payment records for milestones
+
+Tender__c	Status = Cancelled	Update all related Bids → Status = Cancelled
+
+4️⃣ Approval Processes
+
+Automate approvals for Tenders and Bids.
+
+Tender Approval Flow:
+
+Procurement Officer submits Tender → Project Manager approval
+
+Project Manager approves → Director approval
+
+Final Approval → Status = Approved + Email notification
+
+Rejection → Status = Rejected + Email notification
+
+Bid Approval Flow:
+
+Bid submitted → Procurement Officer review
+
+Approval → Status = Approved, Tender updated
+
+Rejection → Status = Rejected, Bidder notified
+
+5️⃣ Flow Builder
+
+Automate complex processes using flows.
+
+Flow Type	Object	Purpose	Key Steps
+Screen Flow	Tender__c	Submission form for Procurement Officer	Input Tender details → Upload documents → Submit for Approval
+
+
+5️⃣ Additional Automation Actions
+
+Email Alerts → Notify users automatically
+
+Field Updates → Automatically change field values
+
+Tasks → Assign tasks to users automatically
+
+Custom Notifications → Pop-up or mobile notifications
