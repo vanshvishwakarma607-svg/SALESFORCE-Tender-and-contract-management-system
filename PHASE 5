@@ -1,1 +1,73 @@
+PHASE 5: Apex Programming (Developer)
 
+focuses on implementing custom business logic using Apex programming to automate processes, enforce rules, and handle complex scenarios that go beyond standard Salesforce automation tools.
+
+1. Classes & Objects
+
+Encapsulate logic in Apex Classes for reusability and modularity.
+
+Create objects (variables, sObjects) to represent and manipulate Salesforce records.
+
+2. Apex Triggers (before/after insert/update/delete)
+
+Automate actions on Salesforce records when they are created, updated, deleted, or undeleted.
+
+Example: Automatically update related Bids when a Tender is approved.
+
+3. Trigger Design Pattern
+
+Use one trigger per object.
+
+Delegate logic to a handler class to keep triggers clean and maintainable.
+
+4. SOQL & SOSL
+
+SOQL (Salesforce Object Query Language) → Query Salesforce records.
+
+SOSL (Salesforce Object Search Language) → Search text across multiple objects.
+
+5. Collections: List, Set, Map
+
+List: Ordered collection of records.
+
+Set: Unique collection of values.
+
+Map: Key-value pair collection, useful for fast lookups.
+
+6. Control Statements
+
+Use if, else, loops, switch statements to control the flow of your Apex logic.
+
+7. Batch Apex
+
+Handle large volumes of data asynchronously.
+
+Process records in batches to avoid governor limits.
+
+8. Queueable Apex
+
+Run asynchronous operations with more flexibility than future methods.
+
+Chain jobs for complex processing sequences.
+
+9. Scheduled Apex
+
+Automate periodic tasks, like daily updates, reminders, or calculations.
+
+10. Future Methods
+
+Execute operations asynchronously to improve performance and avoid delays in UI.
+
+11. Exception Handling
+
+Use try-catch blocks to handle errors gracefully and log exceptions.
+
+12. Test Classes
+
+Write unit tests for triggers and classes to ensure code coverage (minimum 75% for deployment).
+
+Simulate real scenarios and validate expected outcomes.
+
+13. Asynchronous Processing
+
+Combine Batch, Queueable, and Future methods for efficient, long-running operations.
