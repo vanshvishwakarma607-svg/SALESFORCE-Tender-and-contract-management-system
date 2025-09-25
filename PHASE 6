@@ -1,1 +1,110 @@
+PHASE 6: User Interface Development 
+
+
+1️⃣ Lightning App Builder
+
+Purpose: Build custom user interfaces without coding.
+
+What to Do:
+
+Navigate to Setup → Lightning App Builder.
+
+Create Custom Pages for different user groups (Procurement Officer, Project Manager, Director).
+
+Add components like Related Lists, Tabs, Reports, and LWCs.
+
+2️⃣ Record Pages
+
+Purpose: Customize how records (Tender, Bid, Contract, Payment) appear.
+
+Steps:
+
+Go to Object Manager → Tender → Lightning Record Pages.
+
+Add Highlights Panel, Tabs (Details, Related, Notes).
+
+Insert Custom LWCs (like Tender Summary).
+
+3️⃣ Tabs
+
+Purpose: Provide quick navigation for custom objects.
+
+Steps:
+
+Setup → Tabs → New Custom Object Tab.
+
+Add Tabs for Tender, Bid, Contract, Payment.
+
+Assign to App Navigation.
+
+4️⃣ Home Page Layouts
+
+Purpose: Customize the Salesforce Home page.
+
+Steps:
+
+Setup → Lightning App Builder → Home Page.
+
+Add:
+
+Reports/Charts 
+
+Tasks List.
+
+Approvals Pending.
+
+Custom Notifications panel.
+
+5️⃣ Utility Bar
+
+Purpose: Provide quick access to tools at the bottom of the screen.
+
+Examples:
+
+Add Notes.
+
+Add Recent Items.
+
+Add Custom LWC (e.g., Quick Tender Search).
+
+6️⃣ Lightning Web Components (LWC)
+
+Purpose: Build custom UI with JavaScript, HTML, and Apex integration.
+
+Examples for Tender App:
+
+Tender Summary Component → Displays all bids and total amount.
+
+Bid Submission Form → Allows users to enter and submit a bid.
+
+Contract Dashboard → Shows contract progress and payments.
+
+7️⃣ Apex with LWC
+
+Purpose: Fetch Salesforce data via Apex into LWCs.
+
+
+8️⃣ Events in LWC
+
+Purpose: Communicate between components.
+
+Types:
+
+Child → Parent (CustomEvent).
+
+Parent → Child (Public Property).
+
+9️⃣ Wire Adapters
+
+Purpose: Fetch data declaratively without writing Apex.
+
+
+🔟 Imperative Apex Calls
+
+Purpose: Fetch or update data programmatically when an action happens.
+
+
+1️⃣1️⃣ Navigation Service
+
+Purpose: Navigate between records, pages, and apps programmatically.
 
