@@ -1,1 +1,65 @@
+Phase 7: Integration & External Access
 
+This phase focuses on connecting Salesforce with external systems, automating data exchange, and managing API access.
+
+1️⃣ Named Credentials
+
+Store authentication settings for external systems securely.
+
+Example: Connecting to a vendor’s procurement API.
+
+Avoid hardcoding credentials in Apex.
+
+2️⃣ External Services
+
+Register and invoke APIs from external systems directly in Salesforce.
+
+Example: Fetch live pricing data from a supplier portal.
+
+3️⃣ Web Services (REST/SOAP)
+
+Create Apex classes to consume or expose REST/SOAP services.
+
+Example: REST API to submit bid details from an external portal.
+
+4️⃣ Callouts
+
+Use HTTP Callouts to integrate Salesforce with external APIs.
+
+Example: Push contract approvals to an external project management tool.
+
+5️⃣ Platform Events
+
+Use event-driven architecture to trigger actions in real-time.
+
+Example: Notify external systems when a tender is approved.
+
+6️⃣ Change Data Capture
+
+Monitor Salesforce record changes in real-time.
+
+Example: Automatically sync updates on Contracts to ERP systems.
+
+7️⃣ Salesforce Connect
+
+Access external objects and data without storing it in Salesforce.
+
+Example: View supplier bids from external database within Salesforce UI.
+
+8️⃣ API Limits
+
+Monitor and manage API usage to avoid hitting limits.
+
+Example: Limit external integrations to prevent exceeding daily API calls.
+
+9️⃣ OAuth & Authentication
+
+Securely authenticate Salesforce with external apps.
+
+Example: OAuth 2.0 flow for integrating with partner systems.
+
+10️⃣ Remote Site Settings
+
+Register external endpoints to allow Salesforce callouts.
+
+Example: Add supplier API URL in Remote Site Settings to enable communication.
