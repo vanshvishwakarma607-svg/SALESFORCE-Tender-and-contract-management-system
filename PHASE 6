@@ -83,28 +83,3 @@ Contract Dashboard → Shows contract progress and payments.
 
 Purpose: Fetch Salesforce data via Apex into LWCs.
 
-
-8️⃣ Events in LWC
-
-Purpose: Communicate between components.
-
-Types:
-
-Child → Parent (CustomEvent).
-
-Parent → Child (Public Property).
-
-9️⃣ Wire Adapters
-
-Purpose: Fetch data declaratively without writing Apex.
-
-
-🔟 Imperative Apex Calls
-
-Purpose: Fetch or update data programmatically when an action happens.
-
-
-1️⃣1️⃣ Navigation Service
-
-Purpose: Navigate between records, pages, and apps programmatically.
-
