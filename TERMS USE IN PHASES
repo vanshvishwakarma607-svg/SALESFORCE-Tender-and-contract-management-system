@@ -1,0 +1,123 @@
+Phase 1–2: Setup & Requirement Gathering
+
+Mostly documentation, no coding yet.
+
+GitHub content:
+
+docs/Requirements.md → Project requirements, objectives, use cases
+
+docs/ERD.png → Entity Relationship Diagram of objects (Tender, Contract, Bid)
+
+Phase 3–4: Object & Field Setup
+
+Salesforce custom objects and fields.
+
+GitHub content:
+
+metadata/objects/ → Include object metadata XML (Tender__c.object, Contract__c.object)
+
+metadata/fields/ → Custom fields’ XML if separate
+
+Optional: Create a diagram showing object relationships for reference.
+
+Phase 5: Validation Rules & Workflow
+
+Salesforce business rules.
+
+GitHub content:
+
+metadata/validationRules/ → XML files for validation rules
+
+metadata/workflows/ → Workflow metadata (field updates, email alerts)
+
+Documentation: docs/Validation_Workflows.md explaining rules
+
+Phase 6: Apex Classes & Triggers
+
+Any custom logic you wrote in Apex.
+
+GitHub content:
+
+src/classes/ → .cls files for Apex classes
+Example: TenderTriggerHandler.cls
+
+src/triggers/ → .trigger files
+Example: TenderTrigger.trigger
+
+Documentation: docs/Apex_Logic.md explaining each trigger/class purpose
+
+Phase 7–8: Data Management
+
+Data import/export logic.
+
+GitHub content:
+
+data/ → Sample CSVs used for import
+
+scripts/DataLoader_Instructions.md → Steps or script for loading data
+
+metadata/duplicateRules/ → XML of duplicate rules
+
+Phase 9: Reports, Dashboards & Security
+
+Reports, dashboards, and security configurations.
+
+GitHub content:
+
+metadata/reports/ → Report metadata XML
+
+metadata/dashboards/ → Dashboard XML
+
+metadata/sharingSettings/ → Sharing rules XML
+
+metadata/profiles/ → Field-level security XML
+
+docs/Security_Configuration.md → Explain OWD, FLS, Login IP, Session Settings
+
+Phase 10: Final Presentation & Demo
+
+Presentation and handoff documents.
+
+GitHub content:
+
+docs/Pitch_Presentation.pptx or PDF
+
+docs/Demo_Video.mp4 (optional)
+
+docs/Project_Handoff.md → Include screenshots, instructions, metadata overview
+
+docs/LinkedIn_Portfolio.md → Public showcase info
+
+Suggested GitHub Folder Structure
+/Salesforce-Tender-Project
+│
+├─ docs/
+│   ├─ Requirements.md
+│   ├─ ERD.png
+│   ├─ Validation_Workflows.md
+│   ├─ Apex_Logic.md
+│   ├─ DataLoader_Instructions.md
+│   ├─ Security_Configuration.md
+│   ├─ Project_Handoff.md
+│   ├─ LinkedIn_Portfolio.md
+│   └─ Pitch_Presentation.pptx
+│
+├─ data/
+│   └─ SampleData.csv
+│
+├─ metadata/
+│   ├─ objects/
+│   ├─ fields/
+│   ├─ validationRules/
+│   ├─ workflows/
+│   ├─ reports/
+│   ├─ dashboards/
+│   ├─ sharingSettings/
+│   ├─ profiles/
+│   └─ duplicateRules/
+│
+├─ src/
+│   ├─ classes/
+│   │   └─ TenderTriggerHandler.cls
+│   └─ triggers/
+│       └─ TenderTrigger.trigger
