@@ -1,0 +1,49 @@
+PHASE : 8 Data Management & Deployment
+
+1. Data Import Wizard
+
+Tool for importing small to medium datasets.
+
+Enables adding records for Contractors, Tenders, Bids, Projects, and Payments.
+
+2. Data Loader
+
+Supports bulk import, update, upsert, export, and deletion of large datasets.
+
+Ideal for large-scale data operations beyond the limits of the Data Import Wizard.
+
+3. Duplicate Rules
+
+Prevents duplicate records and maintains data accuracy.
+
+Ensures unique entries for Accounts, Contacts, Tenders, and Bids.
+
+4. Data Export & Backup
+
+Provides regular backup of Salesforce data.
+
+Helps recover data in case of accidental deletion or corruption.
+
+5. Change Sets
+
+Deploys metadata changes across Salesforce environments (Sandbox → Production).
+
+Useful for moving objects, fields, validation rules, flows, and other configurations.
+
+6. Unmanaged vs Managed Packages
+
+Unmanaged Packages: For deploying metadata without locking components; customizable in target org.
+
+Managed Packages: For distributing apps with version control and locked components; supports updates.
+
+7. ANT Migration Tool
+
+Enables programmatic metadata deployment using XML descriptors.
+
+Supports version control and automated deployment pipelines.
+
+8. VS Code & Salesforce CLI (SFDX)
+
+Modern development environment for Salesforce.
+
+Facilitates metadata management, scratch orgs, code deployment, and continuous integration.
