@@ -1,0 +1,52 @@
+🔹 PHASE  9: Reporting, Dashboards & Security Review
+Reports
+
+Tabular, Summary, Matrix, Joined reports provide different ways to view and analyze Salesforce data.
+
+Reports can track Tenders, Bids, Contracts, Payments, and their status or value.
+
+Report Types
+
+Define which objects and related records can be included in reports.
+
+Custom report types (e.g., Tender with Bids) allow detailed reporting on multiple related objects.
+
+Dashboards
+
+Visual representation of reports with charts, graphs, and tables.
+
+Provides at-a-glance monitoring of tender lifecycle, bid status, contract progress, and payments.
+
+Dynamic Dashboards
+
+Display data based on the viewing user’s role or access level.
+
+Ensures managers, finance officers, and contractors see only relevant information.
+
+Sharing Settings
+
+Control record-level access using Org-Wide Defaults (OWD), role hierarchy, and sharing rules.
+
+Ensures sensitive data like contract values are visible only to authorized users.
+
+Field-Level Security (FLS)
+
+Controls visibility and editability of individual fields for different profiles.
+
+Protects confidential data while providing necessary access to relevant users.
+
+Session Settings
+
+Manage session duration, security policies, and login behavior to maintain secure access.
+
+Login IP Ranges
+
+Restrict access to Salesforce org based on trusted IP addresses.
+
+Enhances security by limiting logins to office or approved locations.
+
+Audit Trail
+
+Tracks configuration and metadata changes in Salesforce setup.
+
+Provides accountability and supports compliance audits.
