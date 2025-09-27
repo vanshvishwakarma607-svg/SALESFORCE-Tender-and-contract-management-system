@@ -5,37 +5,38 @@
       "default": true
     }
   ],
+
   "name": "Salesforce Tender-and-contract-management-system",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "64.0"
-}public class ContractManager {
+} public class ContractManager {
     public String contractName { get; set; }
     public Date startDate { get; set; }
     public Date endDate { get; set; }
 
-    public ContractManager(String name, Date start, Date endDate) {
+    public ContractManager(String name, Date start, Date endDate ) {
         contractName = name;
         startDate = start;
         this.endDate = endDate;
     }
 
-    public Integer getContractDuration() {
-        return endDate.daysBetween(startDate);
+    public Integer getContractDuration () {
+        return endDate.daysBetween(startDate );
     }
-}public class ContractManager {
+} public class ContractManager {
     public String contractName { get; set; }
     public Date startDate { get; set; }
     public Date endDate { get; set; }
 
-    public ContractManager(String name, Date start, Date endDate) {
+    public ContractManager ( String name, Date start, Date endDate )  {
         contractName = name;
         startDate = start;
         this.endDate = endDate;
     }
 
-    public Integer getContractDuration() {
-        return endDate.daysBetween(startDate);
+    public Integer getContractDuration () {
+        return endDate.daysBetween(startDate );
     }
 }
 
